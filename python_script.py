@@ -1,5 +1,5 @@
 import git
-repo = git.Repo('python')
+repo = git.Repo('/var/lib/jenkins/workspace/python_git/python')
 if repo.is_dirty(untracked_files=True):
   print("Changes Detected")
   repo.git.add(all=True)
