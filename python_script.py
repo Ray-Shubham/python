@@ -15,6 +15,7 @@ if repo.is_dirty(untracked_files=True):
   print("Changes Detected")
   repo.git.add(all=True)
   repo.index.commit("Commit Done")
-  print(repo.remotes.origin.push())
+ # print(repo.remotes.origin.push())
+  f = open("dummy.txt","x")
 else:
   print("No Changes")
