@@ -1,8 +1,8 @@
 import git
 repo = git.Repo('/var/lib/jenkins/workspace/python_git/python')
-print('Remotes:')
+'''print('Remotes:')
 for remote in repo.remotes:
-    print(f'- {remote.name} {remote.url}')
+    print(f'- {remote.name} {remote.url}')'''
 
 
 with repo.config_writer() as git_config:
